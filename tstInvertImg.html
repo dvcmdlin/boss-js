@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="myCss.css">
+</head>
+<body>
+
+<h2>test image invert</h2>
+
+<div>
+  <label for="download">Select a file:</label>
+  <input type="file" onchange="loadFile(this);" />
+  <button onclick="saveFile() ;">saveFile</button>
+  <a id="download"></a>
+  <button type="button" onclick="invertColor();">invertColor</button>
+</div>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+<script src="myJs.js" ></script>
+<script>
+var cvs,ctx;
+window.onload = function() {
+
+  cvs = document.getElementById("myCanvas");
+  ctx = cvs.getContext("2d");
+
+};
+
+</script>
+
+
+</body>
+</html>

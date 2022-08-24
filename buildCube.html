@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #cube >.top {
+        width:240px;height:60px;background-color: #dddddd;
+        transform: skew(-45deg,0deg) translate(30px,0px);
+    }
+    #cube >.center {
+        width:240px;height:240px;background-color: #aaaaaa;
+        display: inline-block;
+        /* transform: skew(-45deg,0deg) translate(30px,0px); */
+    }
+    #cube >.right {
+        width:60px;height:240px;background-color: #888888;
+        display: inline-block;
+        transform: skew(0deg,-45deg) translate(0px,-30px);
+    }
+</style>
+</head>
+<body>
+    <div class="cube" id="cube">
+        <div class="top" id="top"></div>
+        <div class="center"  id="center"></div><div class="right"  id="right"></div>
+    </div>
+</body>
+</html>
