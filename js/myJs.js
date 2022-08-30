@@ -51,7 +51,7 @@ function loadDoc() {
   xhttp.onload = function() {
     document.getElementById("demo").innerHTML = this.responseText;
   }
-  xhttp.open("GET", "ajax_info.txt");
+  xhttp.open("GET", "../txt/tst.txt");
   xhttp.send();
 }
 
@@ -63,7 +63,7 @@ function loadDoc1() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "ajax_info.txt");
+  xhttp.open("GET", "../txt/tst.txt");
   xhttp.send();
 }
 
@@ -294,11 +294,3 @@ function cnt () {
   return function () {counter += 1; return counter;}
 };
 
-
-function myClockFunction() {
-  let d = new Date();
-  document.getElementById("demo").innerHTML=
-  d.getHours() + ":" +
-  d.getMinutes() + ":" +
-  d.getSeconds();
-}

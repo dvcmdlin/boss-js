@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font: 16px/1.55 serif;
+}
+ol {
+    counter-reset: ion;
+    list-style-type: none;
+}
+
+li::before {
+    counter-increment: ion;
+    content: counters(ion,".") " ";
+}
+</style>
+</head>
+<body>
+
+<ol>
+  <li>item</li>
+  <li>item     
+    <ol>
+      <li>item
+        <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+          </ol>
+      </li>
+      <li>item
+        <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+          </ol>
+      </li>
+      <li>item
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ol>
+      </li>
+      <li>item</li>
+    </ol>
+  </li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<ol>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<p><b>Note:</b> IE8 supports these properties only if a !DOCTYPE is specified.</p>
+
+</body>
+</html>

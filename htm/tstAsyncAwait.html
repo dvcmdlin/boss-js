@@ -18,6 +18,7 @@ async function getFile() {
     let req = new XMLHttpRequest();
     let url="https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json";
     req.open('GET',url );
+    
     req.onload = function() {
       if (req.status == 200) {
         resolve(req.response);

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Counter</title>
+        <style>
+         body {
+    font: 16px/1.55 serif;
+}
+ul {
+    counter-reset: ion;
+    list-style-type: none;
+}
+
+li::before {
+    counter-increment: ion;
+    content: counters(ion,".") " ";
+}   
+            /* body {
+                font: 16px/1.55 serif;
+            }
+            .toc {
+                counter-reset: chapter;
+            }
+            .toc > ul > li {
+                counter-increment: chapter;
+                counter-reset: section;
+                margin-left: 1em;
+            }
+            .toc > ul > li::before {
+                content: counter(chapter);
+                margin-right: 0.5em;
+            }
+            .toc > ul > li > ul > li {
+                counter-increment: section;
+                margin-left: 1em;
+            }
+            .toc > ul > li > ul > li::before {
+                content: counter(chapter) "." counter(section);
+                margin-right: 0.5em;
+            } */
+        </style>
+    </head>
+    <body>
+
+        <div class="toc">
+            <ul>
+                <li>這是第x章，啦啦啦啦
+                    <ul>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                    </ul>
+                </li>
+                <li>這是第x章，啦啦啦啦
+                    <ul>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                    </ul>
+                </li>
+                <li>這是第x章，啦啦啦啦
+                    <ul>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                    </ul>
+                </li>
+                <li>這是第x章，啦啦啦啦
+                    <ul>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                    </ul>
+                </li>
+                <li>這是第x章，啦啦啦啦
+                    <ul>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                        <li>這是第x節，啦啦啦啦啦啦</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
